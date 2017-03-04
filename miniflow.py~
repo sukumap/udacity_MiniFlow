@@ -69,10 +69,9 @@ class Linear(Node):
         print("Length is ", range(length)) 
         for i in range(length):
             if self.value is None:
-                self.value = inputs.value[i]*weights.value[i]
+                self.value = inputs.value[i]*weights.value[i] + bias.value
             else:
-                self.value = self.value + (inputs.value[i]*weights.value[i]) 
-        self.value = self.value + bias.value      
+                self.value = self.value + (inputs.value[i]*weights.value[i] + bias.value)       
         print("Final Value is ", self.value)        
         
 
