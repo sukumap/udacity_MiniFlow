@@ -19,7 +19,7 @@ X_ = np.array([[-1., -2.], [-1, -2]])
 W_ = np.array([[2., -3], [2., -3]])
 b_ = np.array([-3., -5])
 
-print(X_.shape)
+#print(X_.shape)
 feed_dict = {X: X_, W: W_, b: b_}
 
 graph = topological_sort(feed_dict)
@@ -30,5 +30,5 @@ Output should be:
 [[-9., 4.],
 [-9., 4.]]
 """
-#print(output)
+print(output)
 
